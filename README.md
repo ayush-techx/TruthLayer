@@ -6,7 +6,7 @@
 In the digital age, misinformation spreads rapidly across social media platforms and news outlets. It is increasingly difficult for users to distinguish between credible information and deliberate falsehoods, leading to polarization and mistrust.
 
 ## The Solution
-[cite_start]TruthLayer is a full-stack web platform and browser extension that provides real-time "trust signals" on web content[cite: 18]. [cite_start]By combining AI-powered analysis with a robust system of crowd-sourced verification, it helps users make informed judgments about the articles, tweets, and reviews they consume[cite: 18].
+TruthLayer is a full-stack web platform and browser extension that provides real-time "trust signals" on web content. By combining AI-powered analysis with a robust system of crowd-sourced verification, it helps users make informed judgments about the articles, tweets, and reviews they consume.
 
 ## Core Features (Planned for MVP)
 - **Browser Extension:** Overlays trust scores and verification summaries directly on social media posts and articles.
@@ -15,8 +15,8 @@ In the digital age, misinformation spreads rapidly across social media platforms
 - **User Reputation System:** Builds a community of trusted verifiers.
 
 ## Tech Stack
-* [cite_start]**Frontend:** React, HTML, CSS, JavaScript 
-* [cite_start]**Backend:** Node.js, Express 
+* **Frontend:** React, HTML, CSS, JavaScript 
+* **Backend:** Node.js, Express 
 * **Database (Planned):** MongoDB / PostgreSQL
 * **APIs (Planned):** Web APIs for the browser extension, potential integration with NLP models.
 
