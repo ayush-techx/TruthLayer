@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// A trust signal submitted by a community member for a specific URL + text snippet.
+model TrustSignal {
+  id        Int      @id @default(autoincrement())
+  url       String   /// The webpage URL being verified
+  snippet   String   /// The specific text snippet being evaluated
+  score     Int      /// Trust score from 0-100 assigned by the contributor
+  note      String?  /// Optional context note explaining the score
+  author    String   /// Display name of the contributor
+  createdAt DateTime @default(now())
+
+  @@index([url])
+  @@index([createdAt])
+}
