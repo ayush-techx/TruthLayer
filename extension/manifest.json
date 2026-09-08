@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "TruthLayer",
+  "version": "1.0.0",
+  "description": "TruthLayer browser extension",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "favicon.svg",
+    "48": "favicon.svg",
+    "128": "favicon.svg"
+  }
+}
